@@ -1,6 +1,6 @@
 # C++ Exercise
 
-This consit of C++ mini project that cover:
+This consit of C++ mini projects that covers:
 
  - Structures
  - Flow Control
