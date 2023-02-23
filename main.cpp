@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
   float face, interest, duration, needed;
-  for (string stopper; stopper != "No";) 
+  while (true) 
   {
     cout << "\n\n\nHow much do you need?" << endl;
     cin >> needed;
@@ -21,6 +21,6 @@ int main() {
     cout << "===========================" << endl;
     cout << endl << "Payment each month = " << needed / (12 * duration);
     cout << "Do you want to calclate more values (Yes / No)" << endl;
-    cin >> stopper;
+  
   } 
 }
