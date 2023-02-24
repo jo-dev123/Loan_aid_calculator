@@ -5,7 +5,7 @@ int main() {
   float face, interest, duration, needed;
   while (true) 
   {
-    cout << "\n\n\nHow much do you need?" << endl;
+    cout << "\nHow much do you need?" << endl;
     cin >> needed;
     cout << "What is the required interest rate?" << endl;
     cin >> interest;
@@ -20,7 +20,27 @@ int main() {
     cout << endl << "Overall Interest charge = " << interest * duration << endl;
     cout << "===========================" << endl;
     cout << endl << "Payment each month = " << needed / (12 * duration);
-    cout << "Do you want to calclate more values (Yes / No)" << endl;
-  
+
+    // Repeat program or not
+    char rpt_prog;
+    
+
+    //conditions to stop
+    while (rpt_prog != 'y')
+      {
+        cout << endl << "\nDo you want to calclate more values (y / n)" << endl;
+        cin >> rpt_prog;
+        
+        if (rpt_prog == 'n')
+        {
+          cout << "Hope that was helpful" << endl << "Exited Program successfully";
+          return 0;
+        }
+        if (rpt_prog != 'n' && rpt_prog != 'y')
+        {
+          cout << "Wrong input. Please try again" << endl;
+        }
+        
+      }
   } 
 }
